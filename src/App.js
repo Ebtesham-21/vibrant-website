@@ -70,10 +70,13 @@ function App() {
         </Container>
         <Banner />
         <Chooseus />
+
+        <Services />
         <Process />
         <Work />
 
-        <Services />
+
+
         <Review />
         <Newsletter />
         <Footer />
