@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import logo from '../../../Images/logo-white.png';
 import './Footercustom.css';
 
 const Footer = () => {
@@ -7,14 +8,14 @@ const Footer = () => {
     <Container fluid className='mt-5 p-3 bg-grad '>
 
       <Row className=' p-5  text-center'>
-        <Col>Logo</Col>
+        <Col><img width="70px" height="auto" className="img-responsive" src={logo} alt="logo" /></Col>
         <Col>About
           <p>About us</p>
           <p>Contact</p>
           <p>Portfolio</p></Col>
-        <Col>Support
-          <p>support@example.com</p>
-          <p>+61 3 8376 6284</p>
+        <Col>Email
+          <p> vibrant360bd@gmail.com</p>
+          <p>+880 1796-639528</p>
           <p>Services</p></Col>
         <Col>Follow us
           <p>Facebook</p>

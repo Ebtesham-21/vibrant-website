@@ -72,23 +72,25 @@ const Work = () => {
             </Row>
             <Row>
                 <Col><Card style={{ width: '18rem' }}>
-                    <iframe width="300" height="300" src="https://www.youtube.com/embed/yXWw0_UfSFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/FGoeYZ6Dqnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
                 </Card></Col>
                 <Col><Card style={{ width: '18rem' }}>
-                    <iframe width="300" height="300" src="https://www.youtube.com/embed/yXWw0_UfSFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/YaZep8ug7YY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </Card></Col>
-                <Col><iframe width="300" height="300" src="https://www.youtube.com/embed/yXWw0_UfSFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <Col><Card style={{ width: '18rem' }}><iframe width="300" height="300" src="https://www.youtube.com/embed/OF1xVB50R48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Card>
                 </Col>
             </Row>
             <Row>
-                <Col><iframe width="300" height="300" src="https://www.youtube.com/embed/yXWw0_UfSFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <Col><Card style={{ width: '18rem' }}><iframe width="300" height="300" src="https://www.youtube.com/embed/Np0sEEGxn24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Card >
                 </Col>
-                <Col><iframe width="300" height="300" src="https://www.youtube.com/embed/yXWw0_UfSFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <Col><Card style={{ width: '18rem' }}>
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/ymxbjGed5UA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Card>
                 </Col>
-                <Col><iframe width="300" height="300" src="https://www.youtube.com/embed/yXWw0_UfSFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <Col><Card style={{ width: '18rem' }}>
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/DBgOLtgD5GM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Card>
                 </Col>
             </Row>
 

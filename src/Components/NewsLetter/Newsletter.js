@@ -5,6 +5,7 @@ import db from "../../firebase";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import { Alert } from 'bootstrap';
 
 const Newsletter = () => {
     const [input, setInput] = useState("");
@@ -21,7 +22,11 @@ const Newsletter = () => {
                 email: input,
                 time: firebase.firestore.FieldValue.serverTimestamp(),
             });
-            setInput("")
+            setInput("");
+            setMessage("thank you for subscribing");
+            setTimeout(() => {
+                setMessage("");
+            }, 3000);
         }
     };
 
@@ -36,11 +41,11 @@ const Newsletter = () => {
 
             <Row className="text-center">
                 <Col><h5>Address</h5>
-                    <p>Addresses</p>
+                    <p>H/No: 31 5 (A), Block: A,<br /> Road No: 5, Banasree, Dhaka - 1219</p>
                     <h5>Phone</h5>
-                    <p>+00000000</p>
+                    <p>+880 1796-639528</p>
                     <h5>Email</h5>
-                    <p>support@vibrant.com</p>
+                    <p>vibrant360bd@gmail.com</p>
                 </Col>
                 <Col>
                     <Container className="p-5 m-4">
@@ -56,15 +61,15 @@ const Newsletter = () => {
 
                                     </Form.Group>
                                     <Button variant="secondary" type="submit">Submit</Button>{' '}
-                                </Form></Col>
-                        </Row>
-
-
-                        <Row>
-                            <Col>
-
+                                </Form>
+                                {message && <Alert>
+                                    {message}
+                                </Alert>}
                             </Col>
                         </Row>
+
+
+
                     </Container>
                 </Col>
             </Row>
