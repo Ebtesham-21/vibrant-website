@@ -4,12 +4,12 @@ import 'firebase/compat/firestore';
 import "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB5Ha5jQVJwfViis5l0yuI-WH64zHir0AU",
-    authDomain: "vibrant-website-93153.firebaseapp.com",
-    projectId: "vibrant-website-93153",
-    storageBucket: "vibrant-website-93153.appspot.com",
-    messagingSenderId: "632184336513",
-    appId: "1:632184336513:web:4dc106c31bff333db45d80"
+    apiKey: "AIzaSyB6b6T4I7XaQJYkNhNDnXQ8JQBtc9QYfbE",
+    authDomain: "vibrant-newsletter.firebaseapp.com",
+    projectId: "vibrant-newsletter",
+    storageBucket: "vibrant-newsletter.appspot.com",
+    messagingSenderId: "276893297585",
+    appId: "1:276893297585:web:aea617aba78aab69eb2b90"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

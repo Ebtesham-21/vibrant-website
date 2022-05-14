@@ -8,6 +8,7 @@ import 'firebase/compat/firestore';
 
 const Newsletter = () => {
     const [input, setInput] = useState("");
+    const [message, setMessage] = useState("");
     const inputHandler = (e) => {
         setInput(e.target.value);
     };
@@ -19,7 +20,8 @@ const Newsletter = () => {
             db.collection("emails").add({
                 email: input,
                 time: firebase.firestore.FieldValue.serverTimestamp(),
-            })
+            });
+            setInput("")
         }
     };
 
