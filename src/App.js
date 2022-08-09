@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Hero from './Components/Hero/Hero';
 import Banner from './Components/Banner-1/Banner';
 import Chooseus from './Components/Choose-us/Chooseus';
 import Process from './Components/Process/Process';
@@ -86,7 +86,7 @@ function App() {
                   <Nav.Link className="text-white" href="#pricing">Services</Nav.Link>
                   <Nav.Link className="text-white" href="#pricing">News</Nav.Link>
                   <Nav.Link className="text-white" href="#pricing">Contact us</Nav.Link>
-                  <Nav.Link className="text-white" > <Button onClick={() => themeToggler()} variant="secondary">Change Theme</Button>{' '} </Nav.Link>
+                  <Nav.Link className="text-white" > <Button onClick={() => themeToggler()} variant="primary">☀️ / 🌚</Button>{' '} </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -94,9 +94,10 @@ function App() {
 
 
         </Container>
-        <Container className='mt-3 pt-5 float-right '>
 
-        </Container>
+        <Hero />
+
+
         <Banner />
         <Chooseus />
 
