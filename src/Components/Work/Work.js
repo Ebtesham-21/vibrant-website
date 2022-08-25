@@ -12,7 +12,7 @@ import portfolio9 from "../../Images/wbesite.1.jpg";
 
 const Work = () => {
     return (
-        <Container className="text-center mt-5">
+        <Container id="PORTFOLIO" className="text-center mt-5">
             <Row>
                 <Col><h3>WORK</h3></Col>
             </Row>

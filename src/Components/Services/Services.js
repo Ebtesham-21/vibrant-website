@@ -12,7 +12,7 @@ import branding from "../../Images/BrandingArtboard 1.png";
 
 const Services = () => {
   return (
-    <Container className="text-center mt-5">
+    <Container id="SERVICES" className="text-center mt-5">
       <Row>
         <Col><h3>SERVICES</h3></Col>
       </Row>
@@ -41,7 +41,7 @@ const Services = () => {
           className="d-inline-block align-top"
         />{' '}
           <h3>Digital Marketing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit deserunt</p></Col>
+          <p>All kinds of social media marketing including social media.</p></Col>
         <Col><img
           alt=""
           src={app}

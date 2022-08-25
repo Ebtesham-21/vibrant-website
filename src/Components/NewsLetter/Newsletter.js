@@ -32,7 +32,7 @@ const Newsletter = () => {
 
 
     return (
-        <Container>
+        <Container id="NEWSLETTER">
             <Row className="text-center mt-5 p-2">
                 <Col><h3>CONTACT US</h3></Col>
 

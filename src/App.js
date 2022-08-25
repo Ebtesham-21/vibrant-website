@@ -18,7 +18,12 @@ import { Nav, Navbar } from 'react-bootstrap';
 import '../src/Components/Shared/Navbar/Navigation.css';
 import logo from '../src/Images/logo-white.png';
 import firebase from 'firebase/compat/app';
-
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  NavLink
+} from "react-router-dom";
 import UiComponents from "./UiComponents";
 import db from "./firebase";
 
@@ -60,71 +65,106 @@ function App() {
 
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <GlobalStyles />
-      <StyledApp>
+    <Router>
 
-        <Container>
-          <Navbar expand="lg" fixed="top" className="bg-grad" variant="dark">
-            <Container>
-              <Navbar.Brand href="#home">
-                <img
-                  alt=""
-                  src={logo}
-                  width="70px" height="auto"
-                  className="d-inline-block align-top"
-                />{' '}
-
-              </Navbar.Brand>
-              <Navbar.Toggle aria-controls="navbarScroll" />
-              <Navbar.Collapse id="navbarScroll">
-
-                <Nav className="ms-auto  ">
-                  <Nav.Link className="text-white" href="#home">Home</Nav.Link>
-                  <Nav.Link className="text-white" href="#features">About</Nav.Link>
-                  <Nav.Link className="text-white" href="#pricing">Portfolio</Nav.Link>
-                  <Nav.Link className="text-white" href="#pricing">Services</Nav.Link>
-                  <Nav.Link className="text-white" href="#pricing">News</Nav.Link>
-                  <Nav.Link className="text-white" href="#pricing">Contact us</Nav.Link>
-                  <Nav.Link className="text-white" > <Button onClick={() => themeToggler()} variant="primary">☀️ / 🌚</Button>{' '} </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <GlobalStyles />
+        <StyledApp>
 
 
-        </Container>
-
-        <Hero />
-
-
-        <Banner />
-        <Chooseus />
-
-        <Services />
-        <Process />
-        <Work />
-
-
-
-        <Review />
-        <Newsletter />
-        <Div className="App">
           <Container>
-            <UiComponents />
-            <Form onSubmit={submitHandler}>
-              <H2>Subscribe to our Newsletter</H2>
-              <Input type="email" onChange={inputHandler} value={input} />
-              <Button type="submit">Submit</Button>
 
-            </Form>
-            {message && <Alert>{message}</Alert>}
+            <Navbar expand="lg" fixed="top" className="bg-grad" variant="dark">
+              <Container>
+                <Navbar.Brand >
+                  <Nav.Link href="#Hero">
+                    <img
+                      alt=""
+                      src={logo}
+                      width="70px" height="auto"
+                      className="d-inline-block align-top"
+                    />{' '}
+                  </Nav.Link>
+
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+
+                  <Nav className="ms-auto  ">
+                    <Nav.Link className="text-white" href="#Hero">
+                      Home
+
+                    </Nav.Link>
+                    <Nav.Link className="text-white" href="#GETSTARTED">Get Started</Nav.Link>
+                    <Nav.Link className="text-white" href="#WHYUS">Why us</Nav.Link>
+                    <Nav.Link className="text-white" href="#SERVICES">Services</Nav.Link>
+                    <Nav.Link className="text-white" href="#PROCESS">Process</Nav.Link>
+                    <Nav.Link className="text-white" href="#PORTFOLIO">Portfolio</Nav.Link>
+                    <Nav.Link className="text-white" href="#CLIENTREVIEW">Client Review</Nav.Link>
+
+                    <Nav.Link className="text-white" href="#NEWSLETTER">News Letter</Nav.Link>
+                    <Nav.Link className="text-white" > <Button onClick={() => themeToggler()} variant="primary">☀️ / 🌚</Button>{' '} </Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+
 
           </Container>
-        </Div>
-        <Footer />
-      </StyledApp>
-    </ThemeProvider >
+
+          <Link to="#Hero" smooth>Hero</Link>
+          <Link to="#GETSTARTED" smooth>GETSTARTED</Link>
+          <Link to="#WHYUS" smooth>WHYUS</Link>
+          <Link to="#SERVICES" smooth>SERVICES</Link>
+          <Link to="#PROCESS" smooth>PROCESS</Link>
+          <Link to="#PORTFOLIO" smooth>PORTFOLIO</Link>
+          <Link to="#CLIENTREVIEW" smooth>CLIENTREVIEW</Link>
+
+          <Link to="#NEWSLETTER" smooth>NEWSLETTER</Link>
+
+          <Hero />
+
+
+
+
+
+
+
+
+
+
+
+
+          <Banner />
+          <Chooseus />
+
+          <Services />
+          <Process />
+          <Work />
+
+
+
+          <Review />
+
+
+          <Div className="App" id="NEWSLETTER">
+            <Container>
+              <UiComponents />
+              <Form onSubmit={submitHandler}>
+                <H2>Subscribe to our Newsletter</H2>
+                <Input type="email" onChange={inputHandler} value={input} />
+                <Button type="submit">Submit</Button>
+
+              </Form>
+              {message && <Alert>{message}</Alert>}
+
+            </Container>
+          </Div>
+          <Footer />
+        </StyledApp>
+      </ThemeProvider >
+    </Router>
+
 
 
   );

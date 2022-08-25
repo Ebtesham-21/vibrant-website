@@ -4,7 +4,7 @@ import chooseUs from "../../Images/WhyChooseUsArtboard 1.png";
 
 const Chooseus = () => {
     return (
-        <Container>
+        <Container id="WHYUS">
             <Row className='mt-5 ms-5'>
 
                 <Col xs={12} md={6} className='mt-5 '><img className="img-fluid" src={chooseUs} alt="Imge man and girl" /></Col>

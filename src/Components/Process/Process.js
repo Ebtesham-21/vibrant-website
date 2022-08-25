@@ -8,7 +8,7 @@ import followup from "../../Images/FollowUpArtboard 1.png";
 
 const Process = () => {
   return (
-    <Container className="text-center mt-5">
+    <Container id="PROCESS" className="text-center mt-5">
       <Row>
         <Col><h3>PROCESS</h3></Col>
       </Row>
